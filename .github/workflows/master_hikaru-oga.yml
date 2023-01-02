@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'hikaru-oga'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_94BCDBC8286F4555B95EF9F0EEAA7C70 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4056C91C50264C51BCF2F7F7DA1FFFAF }}
           package: .
