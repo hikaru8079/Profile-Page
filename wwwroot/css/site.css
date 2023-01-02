@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'I';
+  src: url('IBMPlexSansJP-Text.otf') format('opentype');
+}
+
 html {
   font-size: 14px;
 }
@@ -15,4 +20,5 @@ html {
 
 body {
   margin-bottom: 60px;
+    font-family: 'I';
 }

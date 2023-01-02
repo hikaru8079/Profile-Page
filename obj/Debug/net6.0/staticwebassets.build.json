@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "seObOv5Vc5wjbruxjrfc9HGZ+xZZKcNQvkbQFy7O9EA=",
+  "Hash": "2qfzpMNxV+hXgpIkfXoTSHci1DJlUKyHU3vsg9KNvuo=",
   "Source": "Profile-Page",
   "BasePath": "_content/Profile-Page",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Profile-Page.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\css\\FiraCode-Medium.woff2",
+      "SourceId": "Profile-Page",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\",
+      "BasePath": "_content/Profile-Page",
+      "RelativePath": "css/FiraCode-Medium.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\FiraCode-Medium.woff2"
+    },
+    {
       "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\css\\site.css",
       "SourceId": "Profile-Page",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\css\\SourceHanCodeJP.ttc",
+      "SourceId": "Profile-Page",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\",
+      "BasePath": "_content/Profile-Page",
+      "RelativePath": "css/SourceHanCodeJP.ttc",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\SourceHanCodeJP.ttc"
     },
     {
       "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\favicon.ico",
