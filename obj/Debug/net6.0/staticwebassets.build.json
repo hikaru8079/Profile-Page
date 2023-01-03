@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2qfzpMNxV+hXgpIkfXoTSHci1DJlUKyHU3vsg9KNvuo=",
+  "Hash": "y+P6LrDTe0Djh5VJfu1KKNRV70ZnGKernD+KM+wVZSo=",
   "Source": "Profile-Page",
   "BasePath": "_content/Profile-Page",
   "Mode": "Default",
@@ -66,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\FiraCode-Medium.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\css\\IBMPlexSansJP-Text.otf",
+      "SourceId": "Profile-Page",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\",
+      "BasePath": "_content/Profile-Page",
+      "RelativePath": "css/IBMPlexSansJP-Text.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\IBMPlexSansJP-Text.otf"
+    },
+    {
+      "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\css\\NotoSansJP-Regular.otf",
+      "SourceId": "Profile-Page",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\",
+      "BasePath": "_content/Profile-Page",
+      "RelativePath": "css/NotoSansJP-Regular.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\NotoSansJP-Regular.otf"
     },
     {
       "Identity": "C:\\Users\\hikaru oga\\Documents\\Profile-Page\\wwwroot\\css\\site.css",
