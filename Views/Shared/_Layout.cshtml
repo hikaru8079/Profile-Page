@@ -3,25 +3,27 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Profile_Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Hikaru Oga</title>
     <link rel="stylesheet" href="~/lib/Bootstrap5.0.2/bootstrap.css" />
 </head>
 
-<body>
+<body class="">
     <!-- ナビゲーションバー -->
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="localhost:7203" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+            <a href="localhost:7203"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none text-dark">
                 <img src="~/lib/bootstrap-icons/pc-display.svg" class="bi me-2" width="40" height="32">
-                <span class="fs-4">Hikaru Oga's Portfolio Page (Profile)</span>
+                <span class="fs-4">Hikaru Oga's Portfolio Page</span>
             </a>
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Overview</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Weather</a></li>
+                <li class="nav-item"><a class="nav-link bg-dark active" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Hobby">Hobby</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Weather</a></li>
             </ul>
         </header>
     </div>
@@ -34,15 +36,16 @@
     </div>
 
     <!--フッター-->
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <div class=container>
+        <footer class="d-flex pt-4 mb-3 border-top text-secondary">
             &copy; 2022 - Profile_Page - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="~/lib/Bootstrap5.0.2/bootstrap.js"></script>
     <script src="~/lib/Vue.js/vue.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

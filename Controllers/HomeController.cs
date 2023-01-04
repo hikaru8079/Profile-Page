@@ -18,7 +18,27 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Overview()
+    {
+        return View();
+    }
+
+    public IActionResult Skills()
+    {
+        return View();
+    }
+
+    public IActionResult Contacts()
+    {
+        return View();
+    }
+
+    public IActionResult Hobby()
+    {
+        return View();
+    }
+
+    public IActionResult Weather()
     {
         return View();
     }
