@@ -20,12 +20,18 @@
                 <span class="fs-4">Hikaru Oga's Portfolio Page</span>
             </a>
             <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link bg-dark active" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Overview">Overview</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Hobby">Hobby</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Weather</a></li>
+                <li class="nav-item"><a class="nav-link bg-dark active" asp-controller="Home"
+                        asp-action="Index">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home"
+                        asp-action="Overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Skills">Skills</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home"
+                        asp-action="Contacts">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Hobby">Hobby</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Weather</a>
+                </li>
             </ul>
         </header>
     </div>
@@ -48,7 +54,16 @@
     <script src="~/lib/Vue.js/vue.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/lib/Highlight.js/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>
+//highlight.js line number
+hljs.highlightAll();
+hljs.addPlugin({
+    'after:highlightElement': ({ el, result }) => {
+        el.innerHTML = result.value.replace(/^/gm, '<span class="row-number"></span>');
+        }
+    });
+
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
