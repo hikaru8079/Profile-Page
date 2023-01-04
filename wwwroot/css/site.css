@@ -1,8 +1,8 @@
 @font-face {
-  font-family: '';
-  src: url('') format('');
+  font-family: 'SourceHanCodeJPLight';
+  src: url('../lib/Fonts/SourceHanCodeJP/SourceHanCodeJP-Light.otf') format('opentype');
 }
 
-body {
-    font-family: '';
+code {
+    font-family: 'SourceHanCodeJPLight';
 }

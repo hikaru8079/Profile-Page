@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@ViewData["Title"] - Hikaru Oga</title>
     <link rel="stylesheet" href="~/lib/Bootstrap5.0.2/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/Highlight.js/tokyo-night-dark.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
 </head>
 
 <body class="">
@@ -30,7 +32,7 @@
 
     <!--ビュー描画-->
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
@@ -45,6 +47,8 @@
     <script src="~/lib/Bootstrap5.0.2/bootstrap.js"></script>
     <script src="~/lib/Vue.js/vue.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/Highlight.js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
