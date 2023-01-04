@@ -4,8 +4,14 @@
         format("opentype");
 }
 
+@font-face {
+    font-family: "FiraCodeRetina";
+    src: url("../lib/Fonts/FiraCode/FiraCode-Retina.ttf")
+        format("truetype");
+}
+
 code {
-    font-family: "SourceHanCodeJPLight";
+    font-family: "FiraCodeRetina";
 }
 
 pre {
