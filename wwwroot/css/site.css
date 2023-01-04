@@ -34,3 +34,8 @@ pre span.row-number::before {
     display: inline-block;
     color: #aaa;
 }
+
+/*htmlタグのclassにfont-change-1指定で以下動作*/
+.font-change-1 {
+    font-family: "";
+}
