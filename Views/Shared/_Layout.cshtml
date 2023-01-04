@@ -55,6 +55,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/lib/Highlight.js/highlight.min.js"></script>
     <script>
+
 //highlight.js line number
 hljs.highlightAll();
 hljs.addPlugin({
@@ -62,7 +63,7 @@ hljs.addPlugin({
         el.innerHTML = result.value.replace(/^/gm, '<span class="row-number"></span>');
         }
     });
-
+    
     </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

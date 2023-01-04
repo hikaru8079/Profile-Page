@@ -17,15 +17,17 @@
 }
 
 code {
-    font-family: "SourceHanCodeJPRegular";
+    font-family: "SourceHanCodeJPLight";
 }
 
 pre {
     counter-reset: rowNumber;
 }
+
 pre span.row-number {
     counter-increment: rowNumber;
 }
+
 pre span.row-number::before {
     content: counter(rowNumber);
     width: 2rem;
