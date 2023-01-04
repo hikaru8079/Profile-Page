@@ -5,13 +5,19 @@
 }
 
 @font-face {
+    font-family: "SourceHanCodeJPRegular";
+    src: url("../lib/Fonts/SourceHanCodeJP/SourceHanCodeJP-Regular.otf")
+        format("opentype");
+}
+
+@font-face {
     font-family: "FiraCodeRetina";
     src: url("../lib/Fonts/FiraCode/FiraCode-Retina.ttf")
         format("truetype");
 }
 
 code {
-    font-family: "FiraCodeRetina";
+    font-family: "SourceHanCodeJPRegular";
 }
 
 pre {
