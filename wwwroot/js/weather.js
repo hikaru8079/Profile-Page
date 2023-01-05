@@ -77,7 +77,7 @@
         try {
             contents.classList.remove('loaded');
             contents.innerHTML =
-                '<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div><div><b>Loading...</b></div>';
+                '<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div><div class="display-5"><b>Loading...</b></div>';
             const data = await window.fetch(apiUrl).then(response => response.json());
             console.log('Fetch Open Meteo API', data);
             contents.innerHTML = generateHtml(data.current_weather, data.hourly);
