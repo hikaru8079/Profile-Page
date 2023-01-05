@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/lib/Bootstrap5.0.2/bootstrap.css" />
     <link rel="stylesheet" href="~/lib/Highlight.js/tokyo-night-dark.min.css">
     <link rel="stylesheet" href="~/css/site.css">
-
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,20 +18,23 @@
 <body>
     <!-- ナビゲーションバー -->
     <div class="container">
-        <header class="navbar border-bottom">
-            <a asp-controller="Home" asp-action="Index" class="text-decoration-none text-dark">
-                <img src="~/lib/bootstrap-icons/pc-display.svg" class="" width="40" height="32">
-                <span class="fs-4">Hikaru Oga's Portfolio Page</span>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Overview">Overview</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Hobby">Hobby</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Weather">Weather</a></li>
-            </ul>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+            <a class="navbar-brand fs-4" asp-controller="Home" asp-action="Index"><img src="~/lib/bootstrap-icons/pc-display.svg" width="40" height="32">Hikaru Oga's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="me-auto"></ul>
+                <ul class="navbar-nav nav nav-pills">
+                    <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Hobby">Hobby</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Weather">Weather</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <!--ビュー描画-->
@@ -54,13 +57,13 @@
     <script src="~/lib/Highlight.js/highlight.min.js"></script>
     <script>
 
-//highlight.js line number
-hljs.highlightAll();
-hljs.addPlugin({
-    'after:highlightElement': ({ el, result }) => {
-        el.innerHTML = result.value.replace(/^/gm, '<span class="row-number"></span>');
-        }
-    });
+        //highlight.js line number
+        hljs.highlightAll();
+        hljs.addPlugin({
+            'after:highlightElement': ({ el, result }) => {
+                el.innerHTML = result.value.replace(/^/gm, '<span class="row-number"></span>');
+            }
+        });
 
     </script>
     @await RenderSectionAsync("Scripts", required: false)
