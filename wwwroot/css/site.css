@@ -20,6 +20,7 @@ code {
     font-family: "SourceHanCodeJPRegular";
 }
 
+/*Highlight.js 行番号*/
 pre {
     counter-reset: rowNumber;
 }
